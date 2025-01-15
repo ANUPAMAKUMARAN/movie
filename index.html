@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -53,6 +53,110 @@
     <button onclick="search()">Search</button>
   </div>
   <div id="movie-details"></div>
+
+  <script src="movie.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Search App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('https://st2.depositphotos.com/1031174/6935/i/450/depositphotos_69358251-stock-photo-film-frames.jpg');
+      /* background-color: #f4f4f4; */
+
+      background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: cover; /* Ensures the image covers the entire width and height */
+  background-position: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      width: 600px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    #search-box {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    input {
+      padding: 10px;
+      width: 70%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+
+    #movie-details {
+      display: none;
+      grid-template-columns: 1fr 2fr;
+      gap: 20px;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+      align-items: center;
+    }
+
+    #movie-details img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .details {
+      text-align: left;
+    }
+
+    .details h2 {
+      margin: 0 0 10px;
+    }
+
+    .details p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Movie Search App</h1>
+    <div id="search-box">
+      <input type="text" id="result" placeholder="Enter movie name" />
+      <button onclick="search()">Search</button>
+    </div>
+    <div id="movie-details"></div>
+  </div>
 
   <script src="movie.js"></script>
 </body>
